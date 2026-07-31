@@ -76,7 +76,7 @@ The **“Agentic AI Build Week & Hackathon Journey”** session provided an auth
 #### Event Photos
 <div style="display: flex; flex-direction: column; gap: 16px;">
   <div style="display: flex; gap: 16px;">
-    <img src="/images/4-Events/event3/1.png"
+    <img src="/images/4-Events/event3/group-photo.png"
          style="width: 50%; height: 250px; object-fit: cover;" alt="Photo 1">
     <img src="/images/4-Events/event3/2.png"
          style="width: 50%; height: 250px; object-fit: cover;" alt="Photo 2">
