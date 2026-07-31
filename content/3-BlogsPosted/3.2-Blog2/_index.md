@@ -1,31 +1,66 @@
 ---
 title: "Blog 2"
-date: 2024-01-01
-weight: 1
+date: 2026-07-17
+weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+## 1. ARTICLE OVERVIEW & PROJECT CONTEXT
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+* **Author:** Huynh Duy Chuong.
+* **Context:** Participating in the *AWS Study Group* program, facing the challenge of optimizing limited study time to achieve the highest efficiency for actual work in an enterprise.
+* **Article Objective:** Determine the strategy for allocating study time, shifting from the habit of working on local Jupyter Notebooks to a standardized cloud operations workflow. [LINK](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2226421048122855/?rdid=Qh4KrhITN1dA0Io4#)
+---
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+## 2. PROFESSIONAL ANALYSIS OF KNOWLEDGE PILLARS
 
-Key points to know:
+The article logically categorizes and prioritizes AWS services according to the ML Lifecycle of a Machine Learning project:
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+```text
+┌─────────────────────────────────────────────────────────────────────────┐
+│                       1. Storage & Security Layer                       │
+│                         (Amazon S3, AWS IAM, VPC)                       │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│                       2. MLOps & Training Engine                        │
+│             (SageMaker Data Wrangler, Feature Store, HPO,               │
+│                        SageMaker Model Registry)                        │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│                     3. Inference & Deployment Layer                     │
+│               (SageMaker Endpoints, API Gateway, AWS Lambda)            │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│                     4. Monitoring & Governance                          │
+│                      (AWS CloudWatch, EC2 Types)                        │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+### A. Cloud Platform & Security (S3, IAM, VPC)
 
-...Image...
+* Many students often overlook this part and jump straight into model training. Understanding **S3** (centralized storage), **IAM** (Least Privilege principle), and **VPC Endpoints** (internal network security) helps ensure enterprise data is not leaked to the Internet.
 
-...Link...
+### B. Standardized MLOps with Amazon SageMaker
 
-...Guide...
+* **Feature Engineering & Feature Store:** Shifting from standalone data processing using Pandas to centralized Feature management helps reuse data for multiple models, avoiding Data Leakage / Redundancy.
+* **Automatic Hyperparameter Tuning (HPO):** Transitioning from manual parameter guessing to automated parameter space search, freeing up time for engineers to focus on architectural design.
+* **Model Registry:** Establish a transparent model versioning process (**v1.0**, **v1.1**, **Approved**). This is the backbone of any modern MLOps pipeline.
+
+### C. Model Deployment & Serverless Architecture
+
+* **SageMaker Endpoints:** Taking the model out of the experimental environment to package it as an API service ready to serve Client applications.
+* **API Gateway + AWS Lambda (Serverless):** An optimal choice for the Prototype/Demo phase. This combination helps optimize costs — the system only incurs costs when there are actual API calls.
+
+---
+
+## 3. REFERENCES
+
+* [AWS Documentation: Amazon SageMaker Developer Guide](https://docs.aws.amazon.com/sagemaker/)
+* [AWS Architecture Center: MLOps Foundation Roadmap on AWS](https://www.google.com/search?q=https://aws.amazon.com/architecture/mlops/)
+* [AWS Workshop: SageMaker Immersion Day Hands-on Labs](https://www.google.com/search?q=https://sagemaker-immersionday.workshop.aws/)

@@ -1,7 +1,7 @@
 ---
-title: "CHIẾN LƯỢC ƯU TIÊN DỊCH VỤ AWS CHO ĐỊNH HƯỚNG AI / MLOPS ENGINEER"
-date: 2024-01-01
-weight: 1
+title: "Blog 2"
+date: 2026-07-17
+weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
@@ -16,7 +16,7 @@ pre: " <b> 3.2. </b> "
 
 Bài viết đã phân loại và sắp xếp thứ tự ưu tiên các dịch vụ AWS một cách rất logic theo đúng vòng đời phát triển của một dự án Machine Learning (ML Lifecycle):
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                       1. Storage & Security Layer                       │
 │                         (Amazon S3, AWS IAM, VPC)                       │
@@ -60,17 +60,7 @@ Bài viết đã phân loại và sắp xếp thứ tự ưu tiên các dịch v
 
 ---
 
-## 3. ...HÌNH ẢNH MINH HỌA KIẾN TRÚC...
-
-*(Thực tập sinh bổ sung các hình ảnh sơ đồ kiến trúc vào báo cáo theo thứ tự bên dưới)*
-
-1. **Hình 3.3.1:** *Sơ đồ luồng MLOps toàn diện trên Amazon SageMaker (từ Data Preparation với Wrangler, Feature Store, Training, HPO đến Model Registry).*
-2. **Hình 3.3.2:** *Kiến trúc triển khai Serverless Inference kết hợp giữa Amazon API Gateway, AWS Lambda và SageMaker Endpoint.*
-3. **Hình 3.3.3:** *Giao diện quản lý phiên bản mô hình trên SageMaker Model Registry trong buổi workshop Immersion Day.*
-
----
-
-## 4. ...LINK TÀI LIỆU THAM KHẢO...
+## 3. LINK TÀI LIỆU THAM KHẢO
 
 * [AWS Documentation: Amazon SageMaker Developer Guide](https://docs.aws.amazon.com/sagemaker/)
 * [AWS Architecture Center: MLOps Foundation Roadmap on AWS](https://www.google.com/search?q=https://aws.amazon.com/architecture/mlops/)

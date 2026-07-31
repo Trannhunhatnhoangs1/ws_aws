@@ -1,31 +1,153 @@
 ---
-title: "Blog 3"
-date: 2024-01-01
-weight: 1
+title: "Blog3"
+date: 2026-07-27
+weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Building an End-to-End Machine Learning Pipeline with Amazon SageMaker
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+Machine learning projects involve much more than simply training a model. A production-ready solution requires a complete workflow that covers data preparation, model training, deployment, monitoring, and continuous maintenance.
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Amazon SageMaker provides a fully managed platform that simplifies every stage of the machine learning lifecycle. By integrating multiple AWS services, developers can build scalable, secure, and production-ready ML pipelines without managing complex infrastructure.
 
-Key points to know:
+This article introduces the major components of an end-to-end machine learning pipeline built using Amazon SageMaker.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+---
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+## What is an End-to-End Machine Learning Pipeline?
 
-...Image...
+An end-to-end machine learning pipeline is a sequence of automated processes that transforms raw data into a deployed prediction service.
 
-...Link...
+Instead of manually performing each task, the pipeline organizes the workflow into several connected stages.
 
-...Guide...
+A typical workflow includes:
+
+- Data collection
+- Data preprocessing
+- Model training
+- Model deployment
+- Model monitoring
+- Continuous improvement
+
+Automating these stages improves reproducibility, reduces human error, and accelerates model delivery.
+
+
+---
+
+## Step 1 – Data Storage
+
+Amazon S3 acts as the central storage service for datasets, training outputs, and model artifacts.
+
+Typical objects stored in S3 include:
+
+- Raw datasets
+- Processed datasets
+- Training scripts
+- Model artifacts
+- Prediction results
+
+Using Amazon S3 allows all pipeline components to access the same data securely and efficiently.
+
+---
+
+## Step 2 – Data Processing
+
+Before training, datasets usually require preprocessing.
+
+Typical preprocessing tasks include:
+
+- Removing missing values
+- Feature engineering
+- Data normalization
+- Train-validation split
+- Format conversion
+
+Amazon SageMaker Processing Jobs automate these operations using managed computing resources.
+
+---
+
+## Step 3 – Model Training
+
+After preprocessing, SageMaker Training Jobs train the machine learning model.
+
+During this stage:
+
+- Training datasets are loaded from Amazon S3.
+- Hyperparameters are configured.
+- Compute instances are provisioned automatically.
+- Model artifacts are generated and stored back in Amazon S3.
+
+Since SageMaker manages the infrastructure automatically, developers only need to focus on model development.
+
+---
+
+## Step 4 – Model Deployment
+
+Once training is complete, the model can be deployed as an Amazon SageMaker Endpoint.
+
+The deployment process includes:
+
+- Creating a SageMaker Model
+- Creating an Endpoint Configuration
+- Deploying an Endpoint
+
+The deployed endpoint exposes a secure HTTPS API that supports real-time predictions.
+
+Applications can submit inference requests directly without managing servers.
+
+---
+
+## Step 5 – Monitoring
+
+After deployment, monitoring becomes essential.
+
+Amazon CloudWatch continuously collects:
+
+- Endpoint metrics
+- Runtime logs
+- Performance statistics
+
+CloudWatch Alarms can automatically trigger Amazon SNS notifications whenever abnormal conditions occur, helping administrators respond quickly to operational issues.
+
+---
+
+## Benefits of an End-to-End Pipeline
+
+Using Amazon SageMaker to build an end-to-end machine learning pipeline offers several advantages:
+
+- Fully managed infrastructure
+- Faster model development
+- Simplified deployment
+- Automated monitoring
+- Better scalability
+- Reduced operational overhead
+- Improved reproducibility
+
+These benefits enable teams to focus more on developing machine learning models instead of maintaining infrastructure.
+
+---
+
+## Application in the SCADA Fault Prediction Platform
+
+In the SCADA Fault Prediction Platform, Amazon SageMaker provides the core machine learning workflow.
+
+The pipeline includes:
+
+- Uploading SCADA datasets to Amazon S3.
+- Processing datasets using SageMaker Processing Jobs.
+- Training an XGBoost model.
+- Deploying the trained model as a SageMaker Endpoint.
+- Performing real-time inference.
+- Monitoring endpoint performance using Amazon CloudWatch.
+- Sending automated alerts through Amazon SNS.
+
+This workflow creates a complete production-ready machine learning solution capable of supporting real-time fault prediction.
+
+---
+
+## Conclusion
+
+Building an end-to-end machine learning pipeline requires more than training accurate models. Data management, deployment, monitoring, and maintenance are equally important for production systems.
+
+Amazon SageMaker provides an integrated platform that simplifies every stage of the machine learning lifecycle. Combined with services such as Amazon S3, CloudWatch, and Amazon SNS, it enables organizations to build scalable, reliable, and maintainable machine learning applications on AWS.
