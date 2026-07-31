@@ -151,3 +151,37 @@ This workflow creates a complete production-ready machine learning solution capa
 Building an end-to-end machine learning pipeline requires more than training accurate models. Data management, deployment, monitoring, and maintenance are equally important for production systems.
 
 Amazon SageMaker provides an integrated platform that simplifies every stage of the machine learning lifecycle. Combined with services such as Amazon S3, CloudWatch, and Amazon SNS, it enables organizations to build scalable, reliable, and maintainable machine learning applications on AWS.
+---
+
+## ARTICLE LINK
+
+[Building an End-to-End Machine Learning Pipeline with Amazon SageMaker](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2229980511100242)
+
+---
+
+## REFERENCES
+
+1. **Amazon SageMaker Documentation**  
+   https://docs.aws.amazon.com/sagemaker/
+
+2. **Amazon SageMaker Pipelines Developer Guide**  
+   https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html
+
+3. **Amazon SageMaker Processing Jobs**  
+   https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job.html
+
+4. **Amazon SageMaker Training Jobs**  
+   https://docs.aws.amazon.com/sagemaker/latest/dg/train-model.html
+
+5. **Amazon SageMaker Endpoints (Real-time Inference)**  
+   https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html
+
+6. **Amazon S3 User Guide**  
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/
+
+7. **Amazon CloudWatch User Guide**  
+   https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/
+
+8. **Amazon SNS Developer Guide**  
+   https://docs.aws.amazon.com/sns/latest/dg/
+

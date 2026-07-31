@@ -8,8 +8,8 @@ pre: " <b> 3. </b> "
 
 This chapter compiles the technical articles (blogs) that our team has contributed and shared with the [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) community. The objective of these posts is to summarize practical knowledge and spread academic value to cloud computing enthusiasts.
 
-###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 1 - PREVENTING MACHINE BREAKDOWNS: INTEGRATING PHYSICAL AI IN PREDICTIVE MAINTENANCE](3.1-Blog1/)
+This blog introduces the concept of Physical AI and its role in predictive maintenance for industrial systems. It explains how Physical AI extends traditional machine learning by combining real-time sensor data, intelligent analysis, and cloud technologies to predict equipment failures before they occur. The article also presents how AWS services such as AWS IoT Core, Amazon SageMaker AI, and Amazon Bedrock can be integrated to build a comprehensive and intelligent predictive maintenance solution.
 
 ### [Blog 2 - AWS Service Prioritization Strategy for AI / MLOPS engineer](3.2-Blog2/)
 This article analyzes and proposes a strategic approach to learning AWS services for AI/MLOps engineers. The content is logically structured into 4 architectural layers: Storage & Security, MLOps & Training, Deployment, and Monitoring. It helps learners transition from using local environments to building standardized MLOps workflows on the cloud.
