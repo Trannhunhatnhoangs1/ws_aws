@@ -1,4 +1,4 @@
-baseURL = "https://trannhunhatnhoangs1.github.io/workshop_aws/"
+baseURL = "https://trannhunhatnhoangs1.github.io/Workshop_aws/"
 relativeURLs = true
 canonifyURLs = true
 defaultContentLanguage = "en"
