@@ -10,4 +10,4 @@ pre: " <b> 8. </b> "
 
 Bạn có thể xem toàn bộ mã nguồn của dự án trên GitHub tại đường dẫn bên dưới:
 
-[Truy cập GitHub Repository](https://github.com/DuyChuong3011/T1_AD/tree/Chuong_fix)
+[Truy cập GitHub Repository](https://github.com/DuyChuong3011/SCADA-Fault-Prediction/tree/main)
