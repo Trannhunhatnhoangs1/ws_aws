@@ -76,6 +76,6 @@ Sự kiện **“Cuộc thi Cloud Architect”** đã mang lại một không kh
 - Học hỏi được nhiều mẹo tư duy và cách tiếp cận bài toán kiến trúc độc đáo từ các đội bạn.
 
 #### Hình ảnh khi tham gia sự kiện
-![Sự kiện](/images/4-Events/event2/6C7A6809.JPG)
+![Sự kiện](/images/4-Events/event2/competition.png)
 
 > Tổng kết: Cuộc thi Cloud Architect không chỉ là một sân chơi tri thức kịch tính mà còn là cơ hội tuyệt vời để em củng cố nền tảng kỹ thuật, rèn luyện bản lĩnh làm việc nhóm và tiếp thêm động lực theo đuổi con đường Cloud/DevOps.
