@@ -151,14 +151,16 @@ Quy trình này tạo nên một hệ thống Machine Learning hoàn chỉnh, s�
 Việc xây dựng một pipeline Machine Learning hoàn chỉnh không chỉ tập trung vào việc huấn luyện mô hình mà còn bao gồm quản lý dữ liệu, triển khai, giám sát và vận hành hệ thống.
 
 Amazon SageMaker cung cấp một nền tảng tích hợp giúp đơn giản hóa toàn bộ vòng đời của mô hình Machine Learning. Khi kết hợp với các dịch vụ như Amazon S3, Amazon CloudWatch và Amazon SNS, người dùng có thể xây dựng các ứng dụng Machine Learning có khả năng mở rộng, ổn định và dễ dàng quản lý trên nền tảng AWS.
+
 ---
-## ARTICLE LINK
+
+## Link kèm
 
 [Building an End-to-End Machine Learning Pipeline with Amazon SageMaker](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2229980511100242)
 
 ---
 
-## REFERENCES
+## Tham khảo
 
 1. **Amazon SageMaker Documentation**  
    https://docs.aws.amazon.com/sagemaker/
