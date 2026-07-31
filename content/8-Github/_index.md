@@ -10,4 +10,4 @@ pre: " <b> 8. </b> "
 
 You can view the full source code and contribute to the project on GitHub:
 
-[Link to GitHub Repository](https://github.com/DuyChuong3011/T1_AD/tree/Chuong_fix)
+[Link to GitHub Repository](https://github.com/DuyChuong3011/SCADA-Fault-Prediction/tree/main)
