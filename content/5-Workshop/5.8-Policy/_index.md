@@ -1,9 +1,9 @@
 ---
 title : "Setting up IAM Policy"
 date :  2026-07-30 
-weight : 5
+weight : 8
 chapter : false
-pre : " <b> 5.5 </b> "
+pre : " <b> 5.8 </b> "
 ---
 
 ### Secure Authorization with AWS IAM
