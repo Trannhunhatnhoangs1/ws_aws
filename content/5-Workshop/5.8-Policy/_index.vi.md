@@ -1,9 +1,9 @@
 ---
 title : "Thiết lập IAM Policy"
 date :  2026-07-30 
-weight : 5
+weight : 8
 chapter : false
-pre : " <b> 5.5 </b> "
+pre : " <b> 5.8 </b> "
 ---
 
 ### Phân quyền an toàn với AWS IAM
