@@ -76,6 +76,6 @@ The **“Cloud Architect Competition”** delivered an energetic, intense, and h
 - Learned valuable analytical shortcuts and unique approaches to architectural problems from opposing teams.
 
 #### Event Photo
-![Event](/images/4-Events/event2/6C7A6809.JPG)
+![Event](/images/4-Events/event2/competition.png)
 
 > Summary: The Cloud Architect Competition was not only an exciting intellectual arena but also a fantastic opportunity to solidify technical foundations, refine teamwork abilities, and gain further inspiration to pursue a career in Cloud and DevOps.
