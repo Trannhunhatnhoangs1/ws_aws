@@ -1,9 +1,9 @@
 ---
 title : "Model Training and Management"
 date :  2026-07-30 
-weight : 4
+weight : 5
 chapter : false
-pre : " <b> 5.4 </b> "
+pre : " <b> 5.5 </b> "
 ---
 
 ### The Core of MLOps: Amazon SageMaker
