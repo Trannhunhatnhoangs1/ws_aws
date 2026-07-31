@@ -1,9 +1,9 @@
 ---
 title : "Huấn luyện và quản lý mô hình"
 date :  2026-07-30 
-weight : 4
+weight : 5
 chapter : false
-pre : " <b> 5.4 </b> "
+pre : " <b> 5.5 </b> "
 ---
 
 ### Cốt lõi của MLOps: Amazon SageMaker
